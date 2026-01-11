@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffd6f3, #f3c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* กล่องการ์ด */
+#page1, #page2, #page3 {
+  background: #ffffff;
+  width: 380px;
+  max-width: 90%;
+  padding: 24px 22px 28px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* หัวข้อ */
+h2, h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #4a4a4a;
+}
+
+/* label */
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 14px;
+}
+
+/* input + select */
+input, select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #fafaff;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #b38cff;
+  box-shadow: 0 0 0 2px rgba(179,140,255,0.2);
+}
+
+/* layout แถว */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row label {
+  flex: 1;
+}
+
+/* ปุ่ม */
+button {
+  border: none;
+  padding: 8px;
+  border-radius: 14px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #7b6cff, #6aa8ff);
+  box-shadow: 0 8px 20px rgba(123,108,255,0.35);
+  transition: 0.2s;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(123,108,255,0.45);
+}
+
+/* ปุ่มนำทาง */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  flex: 4;
+}
+
+/* ข้อความโหลด */
+#loadingMessage {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+/* หน้า 3 */
+.result {
+  background: #f7f7ff;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #333;
+}
+
+#qrContainer img {
+  margin-top: 16px;
+  border-radius: 12px;
+}
+
+.custom-option {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  background: #f7f7ff;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #444;
+}
+
+.custom-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #7b6cff;
+  cursor: pointer;
+}
+
+.custom-option label {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* แนบสลิปโอนเงิน */
+.slip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.slip img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 12px rgba(159, 124, 255, 0.3));
+}
